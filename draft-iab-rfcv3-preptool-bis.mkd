@@ -1,7 +1,7 @@
 ---
 title: RFC v3 Prep Tool Description
 cat: info
-docname: draft-iab-rfcv3-preptool-03
+docname: draft-iab-rfcv3-preptool-bis
 
 stand_alone: true
 
@@ -39,6 +39,11 @@ informative:
 
 This document describes some aspects of the "prep tool" that is expected
 to be created when the new RFC v3 specification is deployed.
+
+This document is the successor to draft-iab-rfcv3-preptool, which is
+currently in the RFC Editor's queue for publication. This -bis draft
+will be used for making changes based on implementation experience with
+the earlier draft.
 
 <!--
 

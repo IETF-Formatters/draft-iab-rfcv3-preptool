@@ -5,17 +5,22 @@
 Network Working Group                                         P. Hoffman
 Internet-Draft                                                     ICANN
 Intended status: Informational                             J. Hildebrand
-Expires: January 19, 2017                                          Cisco
-                                                           July 18, 2016
+Expires: February 5, 2017                                          Cisco
+                                                         August 04, 2016
 
 
                       RFC v3 Prep Tool Description
-                      draft-iab-rfcv3-preptool-03
+                      draft-iab-rfcv3-preptool-bis
 
 Abstract
 
    This document describes some aspects of the "prep tool" that is
    expected to be created when the new RFC v3 specification is deployed.
+
+   This document is the successor to draft-iab-rfcv3-preptool, which is
+   currently in the RFC Editor's queue for publication.  This -bis draft
+   will be used for making changes based on implementation experience
+   with the earlier draft.
 
 Status of This Memo
 
@@ -32,7 +37,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on January 19, 2017.
+   This Internet-Draft will expire on February 5, 2017.
 
 Copyright Notice
 
@@ -45,18 +50,17 @@ Copyright Notice
    publication of this document.  Please review these documents
    carefully, as they describe your rights and restrictions with respect
    to this document.  Code Components extracted from this document must
+
+
+
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 1]
+
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
+
+
    include Simplified BSD License text as described in Section 4.e of
    the Trust Legal Provisions and are provided without warranty as
    described in the Simplified BSD License.
-
-
-
-
-
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 1]
-
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
-
 
 Table of Contents
 
@@ -102,18 +106,18 @@ Table of Contents
        5.4.9.  <relref> Processing . . . . . . . . . . . . . . . . .  12
      5.5.  Inclusion . . . . . . . . . . . . . . . . . . . . . . . .  12
        5.5.1.  <artwork> Processing  . . . . . . . . . . . . . . . .  12
+
+
+
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 2]
+
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
+
+
        5.5.2.  <sourcecode> Processing . . . . . . . . . . . . . . .  13
      5.6.  RFC Production Mode Cleanup . . . . . . . . . . . . . . .  14
        5.6.1.  <note> Removal  . . . . . . . . . . . . . . . . . . .  14
        5.6.2.  <cref> Removal  . . . . . . . . . . . . . . . . . . .  14
-
-
-
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 2]
-
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
-
-
        5.6.3.  <link> Processing . . . . . . . . . . . . . . . . . .  14
        5.6.4.  XML Comment Removal . . . . . . . . . . . . . . . . .  15
        5.6.5.  "xml:base" and "originalSrc" Removal  . . . . . . . .  15
@@ -161,13 +165,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-
-
-
-
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 3]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 3]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
 2.  v3 Prep Tool Usage Scenarios
@@ -221,9 +221,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 4]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 4]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    later, it can run that renderer on all of the prepped XML that has
@@ -277,9 +277,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 5]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 5]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
 5.1.1.  XInclude Processing
@@ -333,9 +333,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 6]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 6]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    Internet-Drafts, and is a number specified by the RFC Editor for
@@ -389,9 +389,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 7]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 7]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    o  else for sections that are deeper than rfc/@tocDepth, use
@@ -445,9 +445,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 8]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 8]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
 5.4.  Generation
@@ -501,9 +501,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017                [Page 9]
+Hoffman & Hildebrand    Expires February 5, 2017                [Page 9]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    <seriesinfo> element is "RFC", "Internet-Draft", or "DOI" or other
@@ -557,9 +557,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 10]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 10]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    to ensure uniqueness.  For example, the first instance of "<iref
@@ -613,9 +613,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 11]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 11]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
 5.4.9.  <relref> Processing
@@ -669,9 +669,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 12]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 12]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
        *  If the <artwork> element has an "alt" attribute, and the SVG
@@ -725,9 +725,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 13]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 13]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
        "src" has any shellmeta strings (such as "`", "$USER", and so on)
@@ -781,9 +781,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 14]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 14]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    3.  If in RFC production mode, check if there is a <link> element
@@ -837,9 +837,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 15]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 15]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
    submitting them to the Internet-Draft processor.  (There is a
@@ -893,9 +893,9 @@ Internet-Draft        RFC v3 Prep Tool Description             July 2016
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 16]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 16]
 
-Internet-Draft        RFC v3 Prep Tool Description             July 2016
+Internet-Draft        RFC v3 Prep Tool Description           August 2016
 
 
 10.  Informative References
@@ -949,4 +949,4 @@ Authors' Addresses
 
 
 
-Hoffman & Hildebrand    Expires January 19, 2017               [Page 17]
+Hoffman & Hildebrand    Expires February 5, 2017               [Page 17]

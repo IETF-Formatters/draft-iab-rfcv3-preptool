@@ -1,5 +1,5 @@
 BRANCH := $(shell git symbolic-ref --short HEAD)
-DRAFT := draft-iab-rfcv3-preptool-latest
+DRAFT := draft-iab-rfcv3-preptool-bis
 .PRECIOUS: %.xml
 all: $(DRAFT).txt $(DRAFT).html
 
